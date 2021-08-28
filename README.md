@@ -2,7 +2,7 @@
 
 ![screen shot](https://raw.githubusercontent.com/kenchoong/navigation-testing/main/screenshot.jpeg)
 
-*Problem happen in /screen/login.tsx*
+**Problem happen in /screens/login.tsx**
 
 
 # LOGS 
