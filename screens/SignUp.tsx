@@ -1,18 +1,26 @@
-import React from 'react'
-import { View, Text } from 'react-native'
-import { useRouting } from 'expo-next-react-navigation'
+import React from "react";
+import { View, Text, Button } from "react-native";
+import { useRouting } from "expo-next-react-navigation";
 
 //import { useNavigation } from '@react-navigation/native';
 
-
-interface SignUpProps {
-
-}
+interface SignUpProps {}
 
 export const SignUp: React.FC<SignUpProps> = () => {
-    return (
-        <View>
-            <Text>Sign up Screen</Text>
-        </View>
-    );
-}
+  const { navigate } = useRouting();
+
+  const onPress = () =>
+    navigate({
+      routeName: "Login",
+    });
+
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>Sign up Screen</Text>
+
+      <Button title="Press Me" onPress={() => onPress()}>
+        go to login
+      </Button>
+    </View>
+  );
+};

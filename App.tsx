@@ -1,15 +1,14 @@
-import 'react-native-gesture-handler';
-import React from 'react';
+import "react-native-gesture-handler";
+import React from "react";
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 
-import { Login } from './screens/Login';
-import { SignUp } from './screens/SignUp';
+import { Login } from "./screens/Login";
+import { SignUp } from "./screens/SignUp";
 
 export default function App() {
-
-  const Stack = createStackNavigator()
+  const Stack = createStackNavigator();
 
   return (
     <NavigationContainer>
